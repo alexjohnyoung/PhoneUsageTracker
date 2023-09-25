@@ -1,0 +1,74 @@
+/* html - styled to autocenter other tags */
+html {
+  height: 500px;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* body - styled to set background colour */
+body {
+  background-color: rgb(34, 34, 34);
+}
+
+/* h1, h2 - styled to change colour */
+h1, h2 {
+  color: rgb(90, 173, 108);
+}
+
+/* a, p, label, input, th - styled to change color to green */
+a, p, label, input, th, tr {
+  color: rgb(69, 131, 82);
+}
+
+/* deleteButton - used to style Delete button on User Report page */
+#deleteButton {
+  color: rgb(156, 34, 20);
+}
+
+/* deleteButton:hover - used to change hover effect with Delete button on User Report page */
+#deleteButton:hover {
+  color: white;
+}
+
+/* a:hover - styled anchor tag to change colour when hovered over */
+a:hover {
+  color: hotpink;
+}
+
+/* .report_form legend - used to style form appearance in User Report page */
+.report_form legend {
+  padding-left: 1%;
+}
+
+/* .report_form button - used to style button in our User Report page */
+.report_form button {
+  margin-left: 20%;
+}
+
+/* report_form - used to style our form in User Report page */
+.report_form {
+  background-color: rgb(20, 20, 20);
+  bottom: 50%;
+  border: 1px solid rgb(255, 255, 255);
+  color: white;
+}
+
+/* report_div - used to pad our div on the User Report page */
+.report_div {
+  padding-left: 30%;
+}
+
+/* comment_field - used to pad our Comments input field on User Report page */
+#comment_field {
+  margin-left: 1%;
+}
+
+/* button - used to style our buttons on User Report page */
+button {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 21px; 
+  margin-left: 40%;
+  background-color: rgb(20, 20, 20);
+  color: white;
+  border: none;
+}

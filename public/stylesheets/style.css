@@ -1,0 +1,269 @@
+/* html - styled to autocenter other tags */
+html {
+  height: 500px;
+  width: 1000px;
+  margin: 0 auto;
+  
+}
+
+/*  Index Page Styling (e.g. nav, indexBody)   */
+/* nav - navigation styling */
+nav {
+  position: absolute;
+  top: 0%;
+
+  text-align: center;
+  background-color: rgb(31, 30, 30);
+  border: 1px solid black;
+  width: 62%;
+  left: 20%;
+  padding-left: 14px;
+  padding-right: 26px;
+  padding-bottom: 14px;
+  padding-top: 55px;
+}
+
+/* navTitle - styled for use on index page with 'h1' tag inside navDiv div */
+#navTitle {
+  font: 42px "Lucida Grande", Helvetica, Arial, sans-serif;
+  position: absolute;
+  left: 22%;
+  top: -3%;
+  margin-top: 1%;
+}
+
+/* navOption - styled for use on index page with 'a' tag inside navDiv div */
+.navOption {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: rgb(210, 214, 211);
+  text-decoration: none;
+  margin-left: 15px;
+  line-height: 1em;
+}
+
+/* indexBody - styled to change index page to show background (body tag) */
+#indexBody {
+  background-color: rgb(31, 30, 30);
+  background-repeat: repeat;
+  margin: 0 auto;
+}
+
+/* aboutDiv - div used for our about page */
+#aboutDiv {
+  position: absolute;
+  top: 31%;
+  right: 16%;
+  width: 61%;
+  height: 200px;
+  border: 1px solid black;
+  background-color: rgb(31, 30, 30);
+  text-align: center;
+  color: white;
+
+  padding-right: 2%;
+  padding-bottom: 14%;
+}
+
+/* indexDiv - div used for our index page */
+#indexDiv {
+  position: absolute;
+  top: 29%;
+  right: 16%;
+  width: 61%;
+  height: 200px;
+  border: 1px solid black;
+  background-color: rgb(34, 34, 34);
+  text-align: center;
+  color: white;
+
+  padding-right: 2%;
+}
+
+/* indexWelcome - styled for more control over 'h1' tag on index page */
+#indexWelcome {
+  font: 38px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+/*////////////////////////////*//*////////////////////////////*//*////////////////////////////*/
+
+/* body - styled to set font of other elements and background colour */
+body {
+  font: 15px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: rgb(34, 34, 34);
+}
+
+/* iframe - used for resizing 'Help' page iframe */
+iframe {
+  margin-left: 19px;
+  width: 95%;
+  height: 130%;
+}
+
+/* create-title id: used to move 'Create Usage' on Create Usage page to the right */
+#create-title {
+  padding-left: 135px;
+}
+
+/* titleUsage - used to move the title on the Create Usage page  */
+#titleUsage {
+    font: 42px "Lucida Console", "Courier New", monospace;
+    position: absolute;
+    left: 26%;
+    top: -3%;
+    margin-top: 1%;
+}
+
+/* aboutTitle - used to move the title on the About page  */
+#aboutTitle {
+  font: 42px "Lucida Console", "Courier New", monospace;
+  position: absolute;
+  left: 20%;
+  top: -3%;
+  margin-top: 1%;
+}
+
+/* helpTitle - used to move the title on the Help page  */
+#helpTitle {
+  font: 42px "Lucida Console", "Courier New", monospace;
+  position: absolute;
+  left: 23%;
+  top: -3%;
+  margin-top: 1%;
+}
+
+/*  General Element Styling (h1, h2 etc)  */
+/* h1, h2 - styled to change colour and move margin from left */
+h1, h2 {
+  color: rgb(90, 173, 108);
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+/* h2 - styled to pad h2 from the left */
+h2 {
+  padding-left: 138px;
+}
+
+/* h3 - styled to change font size and move margin from left */
+h3 {
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+/* a, p, label, input, th - styled to change color to green */
+a, p, label, input, th {
+  color: rgb(69, 131, 82);
+}
+
+/* a:hover - styled anchor tag to change colour when hovered over */
+a:hover {
+  color: hotpink;
+}
+
+/* input - styled to move our form inputs slightly from the top */
+input {
+  margin-top: 5px;
+}
+
+/* button - styled to modify our submit button */
+button {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: rgb(31, 31, 31);
+  color:rgb(207, 221, 210);
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 12px;
+  margin-left: 190px;
+  margin-bottom: 5px;
+}
+
+/* button:hover - styled to change colour of our submit button when hovered over */ 
+button:hover {
+  color: hotpink;
+}
+/*////////////////////////////*//*////////////////////////////*//*////////////////////////////*/
+
+/*  Form Styling (Create Entry) */ 
+/* formWrapper - styled to wrap all of our 'Create Entry' divs */
+.formWrapper {
+  max-width: 500px;
+  margin: 0 auto;
+  border: 1px solid black;
+  margin-top: 15%;
+  background-color: rgb(31, 30, 30);
+}
+
+/* .formDiv - styled to modify appearance of 'Create Entry' form div */
+.formDiv {
+  margin:0 auto; 
+  width: 120%; 
+  padding: 1px;
+}
+
+/* formName - styled to modify our 'Name' label inside nameDiv div */
+#formName {
+  margin:0 auto; 
+  padding:105px;
+}
+
+/* formDurationEducation - styled to modify our 'Education usage' label inside durationDiv */
+#formDurationEducation {
+  margin:0 auto; 
+  padding:45px
+}
+
+/* formDurationShopping - styled to modify our 'Shopping usage' label inside durationDiv */
+#formDurationShopping {
+  margin:0 auto; 
+  padding:74px
+}
+
+/* formDurationSearchBrowsing - styled to modify our 'Search / browsing usage' label inside durationDiv */
+#formDurationSearchBrowsing {
+  margin:0 auto; 
+  padding:35px
+}
+
+/* formDurationSocialMedia - styled to modify our 'Social Media usage' label inside durationDiv */
+#formDurationSocialMedia {
+  margin:0 auto; 
+  padding:51px
+}
+
+/* .nameDiv - styled to change appearance of our div (containing 'Name' label and 'name' input field) */
+.nameDiv {
+  font: 22px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding-top: 8px;
+  padding-bottom: 9px;
+  margin-left: 6px;
+}
+
+/* durationDiv - styled to modify the look of all of our 'Duration' elements (h2 and label / input fields) */
+#durationDiv {
+  border: 1px solid black;
+  width: 82.5%;
+}
+/*////////////////////////////*//*////////////////////////////*//*////////////////////////////*/
+
+/*  Usage Buttons Styling (Usage List) 
+    For use in Phase 2 
+*/ 
+/* usageTitle - styled to pad our 'h1' tag inside the usage list */
+#usageTitle {
+  padding-left: 65px;
+  padding-top: 15px;
+}
+
+/*
+/* #usageEdit, #usageDelete - styled for 'Edit' and 'Delete' entry buttons
+  For future use in phase 2*/
+#usageEdit, #usageDelete {
+  font: 15px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin-left: 0px;
+  background-color: rgb(31, 31, 31);;
+}
+
+/* usageTitle - styled to change colour of our 'Delete' entry button inside the usage list 
+  For future use in phase 2*/
+#usageDelete {
+  color: rgb(167, 26, 26);
+}
+/*////////////////////////////*//*////////////////////////////*//*////////////////////////////*/

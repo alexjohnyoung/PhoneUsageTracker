@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  </head>
+    <div class="wrapperList">
+        <h1 id="usageTitle"><%= title %></h1>
+        <body>
+          <script src="/javascripts/usage.js">
+          </script>
+            <table class="table table-inverse">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Duration (Education)</th>
+        <th>Duration (Shopping)</th>
+        <th>Duration (Browsing)</th>
+        <th>Duration (Social Media)</th>
+        <th>Date</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% for(var i=0; i < usagelist.length; i++) { %>
+     <tr>
+        <td id="td_name"><%= usagelist[i].name %></td>
+        <td id="td_duration_education"><%= usagelist[i].duration_education %>min</td>
+        <td id="td_duration_shopping"><%= usagelist[i].duration_shopping %>min</td>
+        <td id="td_duration_search"><%= usagelist[i].duration_searchbrowsing %>min</td>
+        <td id="td_duration_socialmedia"><%= usagelist[i].duration_socialmedia %>min</td>
+        <td id="td_date"><%= usagelist[i].createdAt %></td>
+        <td><a href="/usages/edit/<%=usagelist[i]._id%>">Edit</a>
+        <a href="/usages/delete/<%=usagelist[i]._id%>">Delete</a></td>
+        
+     </tr>
+  <% } %>
+    </tbody>
+
+  </table>
+
+</body>
+</div>
+
+</html>

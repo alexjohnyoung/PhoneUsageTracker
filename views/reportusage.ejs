@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel='stylesheet' href='/stylesheets/usage.css' />
+    
+    <header>
+      <nav>
+        <h1 id="navTitle"><%= title %></h1>
+        <a class="navOption" href="/usages/create">Create new entry</a>
+        <a class="navOption" href="/usages/usagelist">Modify/Delete entry</a>
+        <a class="navOption" href="/reports/create">Report on daily usage</a>
+        <a class="navOption" href="/about">About</a>
+        <a class="navOption" href="/help">Help</a>
+      </nav>
+    </header>
+    
+  </head>
+  <div class="formWrapper">
+    <h1><%= title %></h1>
+    <div class="ra-r"></div>
+      <body>
+        <div class="formDiv">
+          <form action="/reports/create" method="post">
+          <fieldset>
+            <legend>Report Usage</legend>
+            <label id="label_name">Usage by</label>
+            <select id="form_name" name="form_name">Name
+
+            <% for(var i=0; i < usagelist.length; i++) { %>
+                <option value="<%=usagelist[i]%>"><%= usagelist[i]%></option>
+            <% } %>
+            </select><br><br>
+              
+            <label id="form_date_from">Starting from</label>
+            <input type="date" id="date_from" name="date_from"><br><br>
+
+            <label id="form_date_to">Ending at</label>
+            <input type="date" id="date_to" name="date_to"><br><br>
+            <button class="submitbutton">Submit</button>
+          
+          </fieldset>
+          </form>
+          <a href="/reports/view">View Reports</a>"
+        </div>
+      </body>
+  </div>
+  </div>
+
+</html>

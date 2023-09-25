@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <div class="formWrapper">
+    <h1><%= title %></h1>
+    <div class="ra-r"></div>
+      <body>
+        <div class="formDiv">
+          <form action="/usages/edit/<%=usage._id%>" method="post">
+            <div class="nameDiv">
+              <label id="formName">Name</label>
+              <input type="text" name="name" value="<%=usage.name%>">
+            </div>
+            <div id="durationDiv">
+              <h2>Duration in minutes</h2>
+              <label id="formDurationEducation">Duration (education usage)</label>
+              <input type="text" name="duration_education" value="<%=usage.duration_education%>">
+              <br /> <br />
+              <label id="formDurationShopping">Duration shopping</label>
+              <input type="text" name="duration_shopping" value="<%=usage.duration_shopping%>">
+              <br /> <br /> 
+              <label id="formDurationSearchBrowsing">Duration searching / browsing</label>
+              <input type="text" name="duration_searchbrowsing" value="<%=usage.duration_searchbrowsing%>">
+              <br /> <br />
+              <label id="formDurationSocialMedia">Duration on social media</label>
+              <input type="text" name="duration_socialmedia" value="<%=usage.duration_socialmedia%>">
+              <br>
+              <button>Edit Usage</button>
+              </div>
+          </form>
+        </div>
+      </body>
+  </div>
+  </div>
+
+</html>

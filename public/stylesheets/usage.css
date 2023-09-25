@@ -1,0 +1,159 @@
+/* html - styled to autocenter other tags */
+html {
+  height: 500px;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* body - styled to set background colour */
+body {
+  background-color: rgb(34, 34, 34);
+}
+
+/*  Index Page Styling (e.g. nav, indexBody)   */
+/* nav - navigation styling */
+nav {
+  position: absolute;
+  top: 0%;
+
+  text-align: center;
+  background-color: rgb(31, 30, 30);
+  border: 1px solid black;
+  width: 62%;
+  left: 20%;
+  padding-left: 14px;
+  padding-right: 26px;
+  padding-bottom: 14px;
+  padding-top: 55px;
+}
+
+/* navTitle - styled for use on index page with 'h1' tag inside navDiv div */
+#navTitle {
+  font: 42px "Lucida Grande", Helvetica, Arial, sans-serif;
+  position: absolute;
+  left: 22%;
+  top: -3%;
+  margin-top: 1%;
+}
+
+/* navOption - styled for use on index page with 'a' tag inside navDiv div */
+.navOption {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: rgb(210, 214, 211);
+  text-decoration: none;
+  margin-left: 15px;
+  line-height: 1em;
+}
+
+/*  General Element Styling (h1, h2 etc)  */
+/* h1 - styled to add extra padding */
+h1 {
+  padding-left: 71px;
+}
+
+/* h1, h2 - styled to change colour */
+h1, h2 {
+  color: rgb(90, 173, 108);
+}
+
+/* a, p, label, input, th - styled to change color to green */
+a, p, label, input, th {
+  color: rgb(69, 131, 82);
+}
+
+/* a:hover - styled anchor tag to change colour when hovered over */
+a:hover {
+  color: hotpink;
+}
+
+/* input - styled to move our form inputs slightly from the top */
+input {
+  margin-top: 5px;
+}
+
+/* button:hover - styled to change colour of our submit button when hovered over */ 
+button:hover {
+  color: hotpink;
+}
+/*////////////////////////////*//*////////////////////////////*//*////////////////////////////*/
+
+/*  Form Styling (Create Entry) */ 
+/* formWrapper - styled to wrap all of our 'Create Entry' divs */
+.formWrapper {
+  max-width: 500px;
+  margin: auto;
+  border: 1px solid black;
+  background-color: rgb(31, 30, 30);
+  margin-top: 15%;
+  padding-bottom: 1%;
+  padding-right: 1%;
+}
+
+/* .formDiv - styled to modify appearance of 'Report On Entry' form div */
+.formDiv {
+  margin:0 auto; 
+  padding-left: 2%;
+  margin-top: 3%;
+}
+
+/* class formDiv a: used to style 'View Reports' link inside Create Report page */
+.formDiv a {
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-decoration: none;
+  padding-left: 2%;
+}
+
+/* fieldset - Used to style form on Create Report page  */
+fieldset {
+  border-color: black;
+  border-style: solid;
+}
+
+/* legend - Used to style form on Create Report page */
+legend {
+  font-family: "Lucida Console", "Courier New", monospace;
+  color: white;
+  margin-bottom: 12px;
+  border: 2px solid black;
+}
+
+/* formName - styled to modify our 'Name' label inside nameDiv div */
+#label_name {
+  margin:0 auto; 
+  padding:21.4%;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 20px;
+}
+
+/* form_date_from - styled to change appearance of Date From input on Create Report page */
+#form_date_from {
+  margin:0 auto; 
+  padding:16.5%;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 18px;
+}
+
+/* form_name, date_from, date_to - used to style all input elements on Create Report page */
+#form_name, #date_from, #date_to
+{
+  width: 28%;
+}
+
+/* form_date_to - styled to change appearance of Date To input on Create Report page */
+#form_date_to {
+  margin:0 auto; 
+  padding:21.1%;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 18px;
+}
+
+/* button - Used to style our buttons */
+button {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 26px;
+  margin-left: 39%;
+  margin-bottom: 2%;
+  border: none;
+  color: white;
+  background-color: rgb(31, 30, 30);
+}

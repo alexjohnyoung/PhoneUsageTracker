@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <header>
+
+      <nav>
+        <h1 id="titleUsage"><%= title %></h1>
+        <a class="navOption" href="/usages/create">Create new entry</a>
+        <a class="navOption" href="/usages/usagelist">Modify/Delete entry</a>
+        <a class="navOption" href="/reports/create">Report on daily usage</a>
+        <a class="navOption" href="/about">About</a>
+        <a class="navOption" href="/help">Help</a>
+      </nav>
+
+    </header>
+  </head>
+  <div class="formWrapper">
+    <h1 id="create-title"><%= title %></h1>
+    <div class="ra-r"></div>
+      <body>
+        <div class="formDiv">
+          <form action="/usages/create" method="post">
+            <div class="nameDiv">
+              <label id="formName">Name</label>
+              <input type="text" name="name">
+            </div>
+            <div id="durationDiv">
+              <h2>Duration in minutes</h2>
+              <label id="formDurationEducation">Duration (education usage)</label>
+              <input type="text" name="duration_education">
+              <br /> <br />
+              <label id="formDurationShopping">Duration shopping</label>
+              <input type="text" name="duration_shopping">
+              <br /> <br /> 
+              <label id="formDurationSearchBrowsing">Duration searching / browsing</label>
+              <input type="text" name="duration_searchbrowsing">
+              <br /> <br />
+              <label id="formDurationSocialMedia">Duration on social media</label>
+              <input type="text" name="duration_socialmedia">
+              <br>
+              <button>Submit Usage</button>
+              </div>
+          </form>
+        </div>
+      </body>
+  </div>
+  </div>
+
+</html>

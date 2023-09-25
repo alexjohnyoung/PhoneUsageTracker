@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  </head>
+    <div class="wrapperList">
+    <h1 id="usageTitle"><%= title %></h1>
+    <body>
+      <table class="table table-inverse">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Comments</th>
+          <th>Date From</th>
+          <th>Date To</th>
+          <th>Total (Education)</th>
+          <th>Total (Shopping)</th>
+          <th>Total (Browsing)</th>
+          <th>Total (Social Media)</th>
+          <th>Avg (Education)</th>
+          <th>Avg (Shopping)</th>
+          <th>Avg (Browsing)</th>
+          <th>Avg (Social Media)</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% for(var i=0; i < reportlist.length; i++) { %>
+      <tr>
+          <td id="td_name"><%= reportlist[i].name %></td>
+          <td id="td_comments"><%= reportlist[i].comment %></td>
+          <td id="td_date_from"><%= reportlist[i].date_from %></td>
+          <td id="td_date_to"><%= reportlist[i].date_to %></td>
+          <td id="td_duration_education"><%= reportlist[i].total_education %>min</td>
+          <td id="td_duration_shopping"><%= reportlist[i].total_shopping %>min</td>
+          <td id="td_duration_search"><%= reportlist[i].total_searchbrowsing %>min</td>
+          <td id="td_duration_socialmedia"><%= reportlist[i].total_socialmedia %>min</td>
+          <td id="td_avg_duration_education"><%= reportlist[i].avg_education %>min</td>
+          <td id="td_avg_duration_shopping"><%= reportlist[i].avg_shopping %>min</td>
+          <td id="td_avg_duration_search"><%= reportlist[i].avg_searchbrowsing %>min</td>
+          <td id="td_avg_duration_socialmedia"><%= reportlist[i].avg_socialmedia %>min</td>
+          <td><a href="/reports/delete/<%=reportlist[i]._id%>">Delete</a></td>
+      </tr>
+    <% } %>
+    </tbody>
+  </table>
+
+</body>
+</div>
+
+</html>
